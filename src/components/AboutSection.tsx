@@ -1,4 +1,4 @@
-import { GraduationCap, Calendar, MapPin } from "lucide-react";
+import { GraduationCap, Calendar, MapPin, Briefcase } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -13,54 +13,73 @@ const AboutSection = () => {
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* About Text */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate web developer and UI/UX designer currently pursuing my B.Tech in 
-                <span className="text-foreground font-medium"> Artificial Intelligence and Data Science</span> at 
-                Muthayammal Engineering College.
+                I'm a passionate Frontend Developer and UI/UX Designer currently pursuing my
+                <span className="text-foreground font-medium"> BCA (Bachelor of Computer Application)</span> at 
+                Muthayammal College of Arts and Science, Rasipuram.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 With hands-on experience from my internship at Raj Software Solution, I specialize in 
                 creating responsive, user-friendly websites using modern technologies. I'm dedicated to 
-                writing clean code and designing beautiful, intuitive interfaces.
+                crafting clean designs and intuitive user experiences.
               </p>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin size={18} className="text-primary" />
-                <span>Kondayampalli, India</span>
+                <span>Kondayampalli, Salem, Tamil Nadu, India</span>
               </div>
             </div>
 
-            {/* Education Card */}
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 rounded-xl bg-gradient-primary">
-                  <GraduationCap size={28} className="text-primary-foreground" />
+            {/* Education & Experience Cards */}
+            <div className="space-y-6">
+              {/* Education Card */}
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="p-3 rounded-xl bg-gradient-primary">
+                    <GraduationCap size={24} className="text-primary-foreground" />
+                  </div>
+                  <h3 className="text-lg font-display font-semibold">Education</h3>
                 </div>
-                <h3 className="text-xl font-display font-semibold">Education</h3>
+
+                <div className="space-y-3">
+                  <h4 className="text-base font-semibold text-foreground">
+                    BCA - Bachelor of Computer Application
+                  </h4>
+                  <p className="text-muted-foreground text-sm">
+                    Muthayammal College of Arts and Science, Rasipuram
+                  </p>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Calendar size={14} className="text-primary" />
+                    <span>2023 - 2026</span>
+                  </div>
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
+                    5th Semester • 73%
+                  </div>
+                </div>
               </div>
 
-              <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-foreground">
-                  B.Tech in AI and Data Science
-                </h4>
-                <p className="text-muted-foreground">
-                  Muthayammal Engineering College
-                </p>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Calendar size={16} className="text-primary" />
-                  <span>2021 - 2025</span>
+              {/* Internship Card */}
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="p-3 rounded-xl bg-gradient-accent">
+                    <Briefcase size={24} className="text-primary-foreground" />
+                  </div>
+                  <h3 className="text-lg font-display font-semibold">Internship Experience</h3>
                 </div>
-              </div>
 
-              <div className="mt-6 pt-6 border-t border-border">
-                <h4 className="text-lg font-semibold text-foreground mb-2">
-                  Internship Experience
-                </h4>
-                <p className="text-muted-foreground">
-                  Front End Web Development at Raj Software Solution (15 days)
-                </p>
+                <div className="space-y-3">
+                  <h4 className="text-base font-semibold text-foreground">
+                    Front End Web Developer
+                  </h4>
+                  <p className="text-muted-foreground text-sm">
+                    Raj Software Solution
+                  </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Developed responsive web pages and websites using HTML, CSS, JavaScript & Bootstrap with focus on Responsive Design.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
