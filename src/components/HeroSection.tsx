@@ -1,5 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const HeroSection = () => {
   return (
@@ -15,9 +16,11 @@ const HeroSection = () => {
           {/* Profile Photo */}
           <div className="mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-primary p-1 glow-primary">
-              <div className="w-full h-full rounded-full bg-secondary flex items-center justify-center overflow-hidden">
-                <span className="text-4xl md:text-5xl font-display font-bold text-gradient">VG</span>
-              </div>
+              <img 
+                src={profilePhoto} 
+                alt="Vinoth G - Frontend Developer" 
+                className="w-full h-full rounded-full object-cover"
+              />
             </div>
           </div>
 
