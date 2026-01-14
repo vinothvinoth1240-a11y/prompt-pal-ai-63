@@ -12,28 +12,37 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Profile Photo */}
+          <div className="mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-primary p-1 glow-primary">
+              <div className="w-full h-full rounded-full bg-secondary flex items-center justify-center overflow-hidden">
+                <span className="text-4xl md:text-5xl font-display font-bold text-gradient">VG</span>
+              </div>
+            </div>
+          </div>
+
           {/* Greeting */}
-          <p className="text-muted-foreground font-medium mb-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <p className="text-muted-foreground font-medium mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             Hello, I'm
           </p>
 
           {/* Name */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <span className="text-gradient">Vinoth GV</span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <span className="text-gradient">Vinoth G</span>
           </h1>
 
           {/* Role */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-semibold text-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            Web Developer & UI/UX Designer
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-semibold text-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            Frontend Developer & UI/UX Designer
           </h2>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: "0.5s" }}>
             Passionate about creating responsive, user-friendly websites with clean code and beautiful interfaces.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in" style={{ animationDelay: "0.6s" }}>
             <Button size="lg" className="bg-gradient-primary text-primary-foreground hover:opacity-90 px-8 glow-primary">
               <a href="#contact">Get In Touch</a>
             </Button>
@@ -43,7 +52,7 @@ const HeroSection = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-6 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+          <div className="flex justify-center gap-6 animate-fade-in" style={{ animationDelay: "0.7s" }}>
             <a
               href="https://www.linkedin.com/in/vinoth-gv"
               target="_blank"
@@ -59,7 +68,9 @@ const HeroSection = () => {
               <Mail size={24} />
             </a>
             <a
-              href="#"
+              href="https://github.com/vinothvinoth1240-a11y"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-primary/20 text-muted-foreground hover:text-primary transition-all duration-300"
             >
               <Github size={24} />

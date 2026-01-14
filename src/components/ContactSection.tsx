@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Send, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -21,7 +21,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Kondayampalli, India",
+    value: "Kondayampalli, Salem, Tamil Nadu, India",
     href: null,
   },
   {
@@ -29,6 +29,12 @@ const contactInfo = [
     label: "LinkedIn",
     value: "vinoth-gv",
     href: "https://www.linkedin.com/in/vinoth-gv",
+  },
+  {
+    icon: Github,
+    label: "GitHub",
+    value: "vinothvinoth1240-a11y",
+    href: "https://github.com/vinothvinoth1240-a11y",
   },
 ];
 
@@ -42,7 +48,6 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // For now, just show a toast since there's no backend
     toast({
       title: "Message sent!",
       description: "Thank you for reaching out. I'll get back to you soon!",
@@ -72,11 +77,11 @@ const ContactSection = () => {
                 Contact Information
               </h3>
               
-              <div className="space-y-6">
+              <div className="space-y-5">
                 {contactInfo.map((item) => (
                   <div key={item.label} className="flex items-center gap-4 group">
                     <div className="p-3 rounded-xl bg-gradient-primary text-primary-foreground group-hover:scale-110 transition-transform">
-                      <item.icon size={24} />
+                      <item.icon size={22} />
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">{item.label}</p>
@@ -85,12 +90,12 @@ const ContactSection = () => {
                           href={item.href}
                           target={item.href.startsWith("http") ? "_blank" : undefined}
                           rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                          className="text-foreground font-medium hover:text-primary transition-colors"
+                          className="text-foreground font-medium hover:text-primary transition-colors text-sm"
                         >
                           {item.value}
                         </a>
                       ) : (
-                        <p className="text-foreground font-medium">{item.value}</p>
+                        <p className="text-foreground font-medium text-sm">{item.value}</p>
                       )}
                     </div>
                   </div>
