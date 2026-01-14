@@ -10,10 +10,10 @@ const projects = [
     gradient: "from-purple-600/20 to-pink-600/20",
   },
   {
-    title: "AI Assistant",
-    description: "An intelligent virtual assistant application powered by AI, designed to help users with various tasks through natural conversation and smart responses.",
-    technologies: ["HTML", "CSS", "JavaScript", "AI"],
-    link: "https://beautiful-monstera-1144e1.netlify.app/",
+    title: "College Canteen",
+    description: "A UI/UX design prototype for a college canteen ordering system, featuring an intuitive interface for browsing menus, placing orders, and managing food preferences.",
+    technologies: ["Figma", "UI/UX", "Prototyping", "Visily"],
+    link: "https://app.visily.ai/projects/53808f58-a6b2-462e-bc38-65fae7711b45/boards/2410272/presenter?flowId=0edda7cc-131f-4f3d-ada2-e5ea7266a3c0&play-mode=Prototype",
     gradient: "from-blue-600/20 to-cyan-600/20",
   },
   {
