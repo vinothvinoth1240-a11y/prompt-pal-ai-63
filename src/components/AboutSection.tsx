@@ -44,19 +44,50 @@ const AboutSection = () => {
                   <h3 className="text-lg font-display font-semibold">Education</h3>
                 </div>
 
-                <div className="space-y-3">
-                  <h4 className="text-base font-semibold text-foreground">
-                    BCA - Bachelor of Computer Application
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Muthayammal College of Arts and Science, Rasipuram
-                  </p>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Calendar size={14} className="text-primary" />
-                    <span>2023 - 2026</span>
+                <div className="space-y-4">
+                  {/* BCA */}
+                  <div className="pb-4 border-b border-border">
+                    <h4 className="text-base font-semibold text-foreground">
+                      BCA - Bachelor of Computer Application
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      Muthayammal College of Arts and Science, Rasipuram
+                    </p>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
+                      <Calendar size={14} className="text-primary" />
+                      <span>2023 - 2026</span>
+                    </div>
+                    <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mt-2">
+                      5th Semester • 73%
+                    </div>
                   </div>
-                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
-                    5th Semester • 73%
+
+                  {/* HSC */}
+                  <div className="pb-4 border-b border-border">
+                    <h4 className="text-base font-semibold text-foreground">
+                      HSC - Higher Secondary Certificate
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      Government Higher Secondary School, Kondayampalli
+                    </p>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
+                      <Calendar size={14} className="text-primary" />
+                      <span>2022 - 2023</span>
+                    </div>
+                  </div>
+
+                  {/* SSLC */}
+                  <div>
+                    <h4 className="text-base font-semibold text-foreground">
+                      SSLC - Secondary School Leaving Certificate
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      Government Higher Secondary School, Kondayampalli
+                    </p>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
+                      <Calendar size={14} className="text-primary" />
+                      <span>2020 - 2021</span>
+                    </div>
                   </div>
                 </div>
               </div>
